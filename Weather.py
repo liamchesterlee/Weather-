@@ -19,15 +19,6 @@ class WeatherRetriever:
         self.API_key = api_key
     
     def get_weather(self, city_name):
-        """
-        Retrieve and display weather information for a specified city.
-        
-        Args:
-            city_name (str): Name of the city to get weather for
-        
-        Returns:
-            dict: Weather information if successful, None otherwise
-        """
         try:
             # Construct the API URL with city name and API key
             url = f"https://api.openweathermap.org/data/2.5/weather?q={city_name}&appid={self.API_key}&units=metric"
